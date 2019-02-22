@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 import sys
 
-imagePath = sys.argv[1]
-image = cv2.imread(imagePath)
+image = cv2.imread(sys.argv[1])
 
 # # Convert BGR to HSV
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)

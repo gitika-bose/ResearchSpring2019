@@ -1,4 +1,3 @@
-import argparse
 import imutils
 import cv2
 import numpy as np
@@ -6,6 +5,11 @@ from collections import OrderedDict
 from scipy.spatial import distance as dist
 from PIL import Image
 import os
+import sys
+
+def display(name,img):
+    cv2.imshow(name,img)
+    cv2.waitKey(0)
 
 
 def detect(c):
@@ -72,12 +76,7 @@ def label(image,c):
     return colorNames[minDist[1]]
 
 
-# construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True,
-                help="path to the input image")
-args = vars(ap.parse_args())
-image = cv2.imread(args["image"])
+image = cv2.imread(sys.argv[1])
 resized = imutils.resize(image, width=300)
 ratio = image.shape[0] / float(resized.shape[0])
 # ratio = 1
@@ -86,14 +85,14 @@ gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
 lab = cv2.cvtColor(blurred, cv2.COLOR_BGR2LAB)
 thresh = cv2.threshold(gray,0,255,cv2.THRESH_OTSU)[1]
 # thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)[1]
-cv2.imshow("Image", image)
-cv2.imshow("Gray", gray)
-cv2.imshow("Thresh", thresh)
-cv2.waitKey(0)
+# display("Image", image)
+# display("Gray", gray)
+# display("Thresh", thresh)
 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
                         cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
 
+all = ""
 for c in cnts:
     shape = detect(c)
     color = label(lab, c)
@@ -104,7 +103,8 @@ for c in cnts:
     c *= ratio
     c = c.astype("int")
     text = "{} {}".format(color, shape)
-    print(text)
+    all += text + "\n"
     cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
-cv2.imshow("Image", image)
-cv2.waitKey(0)
+# display("Final Image", image)
+cv2.imwrite('extract_shape_color_img.jpg', image)
+open("extract_shape_color_txt.txt", 'w').write(all)
