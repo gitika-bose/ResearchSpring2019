@@ -1,13 +1,21 @@
 import cv2
-import numpy as np
-from matplotlib import pyplot as plt
+import sys
 
-img = cv2.imread('messi5.jpg',0)
-edges = cv2.Canny(img,100,200)
+imagepath = sys.argv[1]
+img = cv2.imread(imagepath)
 
-plt.subplot(121),plt.imshow(img,cmap = 'gray')
-plt.title('Original Image'), plt.xticks([]), plt.yticks([])
-plt.subplot(122),plt.imshow(edges,cmap = 'gray')
-plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
+cv2.imshow("Original", img)
+cv2.namedWindow('bar')
+cv2.createTrackbar('min','bar',0,255,lambda x:x)
+cv2.createTrackbar('max','bar',0,255,lambda x:x)
 
-plt.show()
+while (1):
+    min=cv2.getTrackbarPos('min','bar')
+    max=cv2.getTrackbarPos('max','bar')
+    edges = cv2.Canny(img,min,max)
+    cv2.imshow("Original", img)
+    cv2.imshow("Edges", edges)
+    k = cv2.waitKey(1) & 0xFF
+    if k == 27:
+        break
+cv2.destroyAllWindows()
