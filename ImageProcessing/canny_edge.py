@@ -1,8 +1,7 @@
 import cv2
 import sys
 
-imagepath = sys.argv[1]
-img = cv2.imread(imagepath)
+img = cv2.imread(sys.argv[1])
 
 cv2.imshow("Original", img)
 cv2.namedWindow('bar')

@@ -1,12 +1,13 @@
 import numpy as np
 import cv2
+import sys
 
 def display(name,img):
     cv2.imshow(name,img)
     cv2.waitKey(0)
 
-img = cv2.imread('pill_images/pill_13_02.jpg')
-display("Original",img)
+img = cv2.imread(sys.argv[1])
+# display("Original",img)
 blurred = cv2.GaussianBlur(img, (5, 5), 0) # Remove noise
 
 def edgedetect (channel):
@@ -18,12 +19,12 @@ def edgedetect (channel):
     return channel
 
 edgeImg = np.max( np.array([ edgedetect(blurred[:,:, 0]), edgedetect(blurred[:,:, 1]), edgedetect(blurred[:,:, 2]) ]), axis=0 )
-display("Edge Image", edgeImg)
+# display("Edge Image", edgeImg)
 
 mean = np.mean(edgeImg)
 # Zero any value that is less than mean. This reduces a lot of noise.
 edgeImg[edgeImg <= mean] = 0
-display("Edge Image Noise", edgeImg)
+# display("Edge Image Noise", edgeImg)
 
 def findSignificantContours (img, edgeImg):
     contours, heirarchy = cv2.findContours(edgeImg, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
@@ -66,8 +67,8 @@ mask = np.logical_not(mask)
 #Finally remove the background
 img[mask] = 0
 
-cv2.imshow("Image",img)
-cv2.waitKey(0)
+# display("Final Image", img)
+cv2.imwrite('edge_detect_img.jpg', img)
 
 # epsilon = 0.10*cv2.arcLength(contour,True)
 # approx = cv2.approxPolyDP(contour, 3,True)

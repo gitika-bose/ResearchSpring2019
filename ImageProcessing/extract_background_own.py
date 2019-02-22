@@ -5,20 +5,25 @@ import numpy as np
 import cv2
 import imutils
 import math
+import sys
 
-img2 = cv2.imread('pill_images/pill_13_02.jpg')
+def display(name,img):
+    cv2.imshow(name,img)
+    cv2.waitKey(0)
+
+img2 = cv2.imread(sys.argv[1])
 img = img2.copy()
 # img = imutils.resize(img, width=300)
-cv2.imshow("Original", img)
-cv2.waitKey(0)
+# display("Original", img)
 w, h = img.shape[:2]
-print(w, h)
+# print(w, h)
 wi, hi = 25, 25
 template = img[:wi, :hi] # top left
 template2 = img[w-wi:, h-hi:] # bottom right
 template3 = img[w-wi:, :hi] # top right
 template4 = img[:wi, h-hi:] # bottom left
-cv2.imshow("Template", template)
+# display("Template", template)
+
 B, G, R = [], [], []
 for i in range(wi):
     for j in range(hi):
@@ -44,6 +49,5 @@ for i in range(w):
         if abs(pixel[0]-mB) <= sB and abs(pixel[1]-mG) <= sG and abs(pixel[2]-mR) <= sR:
             img[i][j] = [0, 0, 0]
 
-cv2.imshow("New Image", img)
-cv2.waitKey(0)
-cv2.imwrite('template.png', img)
+# display("New Image", img)
+cv2.imwrite('extract_background_own_img.jpg', img)

@@ -2,8 +2,9 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 import imutils
+import sys
 
-img = cv2.imread('pill_images/pill_10.jpg')
+img = cv2.imread(sys.argv[1])
 resized = imutils.resize(img, width=350)
 img = resized
 # blurred = cv2.GaussianBlur(img, (5, 5), 0)
