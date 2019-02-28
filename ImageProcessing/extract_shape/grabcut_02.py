@@ -10,8 +10,8 @@ def display(name,img):
 
 shape = sys.argv[1]
 type = sys.argv[2]
-imagepath = 'pill_shapes/' + shape + '/' + shape + '_' + type + '.jpg'
-folder = 'pill_shapes/' + shape + '/'
+imagepath = '../images/pill_shapes/' + shape + '/' + shape + '_' + type + '.jpg'
+folder = '../images/pill_shapes/' + shape + '/'
 img2 = cv2.imread(imagepath)
 
 # display("Original", img2)

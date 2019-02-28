@@ -7,8 +7,8 @@ shapes = ['bullet', 'capsule', 'diamond', 'double_circle', 'freeform', 'hexagon'
 
 trials = ['trial'+str(x+1) for x in range(5)]
 # trials = ['trial3']
-main_folder = 'pill_shapes/'
-temp_folder = 'templates/'
+main_folder = '../images/pill_shapes/'
+temp_folder = '../images/templates/'
 type = 'front'
 compare_folder = main_folder + 'compare/'
 if os.path.isdir(compare_folder):

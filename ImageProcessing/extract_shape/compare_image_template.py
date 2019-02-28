@@ -11,11 +11,11 @@ def display(name,img):
 shape = sys.argv[1] # semi-circle
 template_name = sys.argv [2]
 
-imagepath = 'pill_shapes/' + shape + '/' + shape + '-front_extract.jpg'
-templatepath = 'templates/' + template_name + '.png'
+imagepath = '../images/pill_shapes/' + shape + '/' + shape + '-front_extract.jpg'
+templatepath = '../images/templates/' + template_name + '.png'
 
-compare_txt = 'pill_shapes/' + shape + '/' + shape + "-compare.txt"
-compare = 'pill_shapes/' + shape + '/' + shape + "-compare/"
+compare_txt = '../images/pill_shapes/' + shape + '/' + shape + "-compare.txt"
+compare = '../images/pill_shapes/' + shape + '/' + shape + "-compare/"
 # print(img_shape,temp_shape)
 compare_str = shape + '-' + template_name
 file = compare + compare_str + ".jpg"
@@ -51,7 +51,7 @@ else:
 
     line = compare_str + ': ' + str(whites) + '\n'
 open(compare_txt,'a').write(line)
-open('pill_shapes/compare/'+ shape + "-compare.txt",'a').write(line)
+open('../images/pill_shapes/compare/'+ shape + "-compare.txt",'a').write(line)
 
 
 

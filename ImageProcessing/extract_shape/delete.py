@@ -3,7 +3,7 @@ import shutil
 
 shapes = ['bullet', 'capsule', 'diamond', 'double_circle', 'freeform', 'hexagon', 'octagon', 'oval', 'pentagon',
           'rectangle', 'round', 'semi-circle', 'square', 'tear', 'trapezoid', 'triangle']
-main_folder = 'pill_shapes/'
+main_folder = '../images/pill_shapes/'
 
 for shape in shapes:
     folder = main_folder + shape + "/"
