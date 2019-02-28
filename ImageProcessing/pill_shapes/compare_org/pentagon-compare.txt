@@ -1,0 +1,16 @@
+pentagon-bullet: Can't compare
+pentagon-capsule: Can't compare
+pentagon-diamond: 10575
+pentagon-double_circle: Can't compare
+pentagon-freeform: 20517
+pentagon-hexagon: 12867
+pentagon-octagon: 12513
+pentagon-oval: 13485
+pentagon-pentagon: 6015
+pentagon-rectangle: 12048
+pentagon-round: 13362
+pentagon-semi-circle: 19425
+pentagon-square: 18858
+pentagon-tear: 11112
+pentagon-trapezoid: 8991
+pentagon-triangle: 10377

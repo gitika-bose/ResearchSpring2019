@@ -15,11 +15,14 @@ mask = np.zeros(img.shape[:2],np.uint8)
 bgdModel = np.zeros((1,65),np.float64)
 fgdModel = np.zeros((1,65),np.float64)
 
-rect = (1,1,img.shape[1]-1,img.shape[0]-1)
+rect = (5,5,img.shape[1]-5,img.shape[0]-5)
 cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
 mask2 = np.where((mask==2)|(mask==0),0,1).astype('uint8')
 img = img*mask2[:,:,np.newaxis]
+
+# mean = np.mean(img)
+# img[img <= mean] = 0
 # display("Image", img)
-cv2.imwrite('grabcut_img.jpg', img)
+cv2.imwrite('post_images/grabcut_img.jpg', img)
 # plt.imshow(img),plt.colorbar(),plt.show()
 

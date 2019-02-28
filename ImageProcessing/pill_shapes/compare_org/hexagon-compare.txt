@@ -1,0 +1,18 @@
+hexagon-bullet: Can't compare
+hexagon-capsule: Can't compare
+hexagon-diamond: 8313
+hexagon-double_circle: Can't compare
+hexagon-freeform: 22515
+hexagon-hexagon: 10089
+hexagon-octagon: 12165
+hexagon-oval: 11676
+hexagon-pentagon: 10233
+hexagon-rectangle: 10095
+hexagon-round: 7575
+hexagon-semi-circle: 14760
+hexagon-square: 17490
+hexagon-tear: 9996
+hexagon-trapezoid: Can't compare
+hexagon-triangle: 10827
+hexagon-diamond: 8313
+hexagon-diamond: 8313

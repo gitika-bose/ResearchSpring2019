@@ -1,0 +1,16 @@
+bullet-bullet: 4236
+bullet-capsule: Can't compare
+bullet-diamond: Can't compare
+bullet-double_circle: Can't compare
+bullet-freeform: Can't compare
+bullet-hexagon: Can't compare
+bullet-octagon: Can't compare
+bullet-oval: Can't compare
+bullet-pentagon: Can't compare
+bullet-rectangle: Can't compare
+bullet-round: Can't compare
+bullet-semi-circle: Can't compare
+bullet-square: Can't compare
+bullet-tear: Can't compare
+bullet-trapezoid: Can't compare
+bullet-triangle: Can't compare

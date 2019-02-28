@@ -1,0 +1,16 @@
+trial2-bullet: Can't compare
+trial2-capsule: 5028
+trial2-diamond: 6291
+trial2-double_circle: 5910
+trial2-freeform: Can't compare
+trial2-hexagon: Can't compare
+trial2-octagon: 6486
+trial2-oval: 7509
+trial2-pentagon: Can't compare
+trial2-rectangle: Can't compare
+trial2-round: Can't compare
+trial2-semi-circle: Can't compare
+trial2-square: Can't compare
+trial2-tear: 5253
+trial2-trapezoid: 6141
+trial2-triangle: Can't compare
