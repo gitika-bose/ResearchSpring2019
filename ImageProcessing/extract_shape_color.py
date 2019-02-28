@@ -106,5 +106,5 @@ for c in cnts:
     all += text + "\n"
     cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
 # display("Final Image", image)
-cv2.imwrite('extract_shape_color_img.jpg', image)
-open("extract_shape_color_txt.txt", 'w').write(all)
+cv2.imwrite('post_images/extract_shape_color_img.jpg', image)
+open("post_images/extract_shape_color_txt.txt", 'w').write(all)

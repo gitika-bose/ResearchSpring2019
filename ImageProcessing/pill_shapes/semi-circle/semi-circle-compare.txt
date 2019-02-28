@@ -1,0 +1,16 @@
+semi-circle-bullet: Can't compare
+semi-circle-capsule: Can't compare
+semi-circle-diamond: 8478
+semi-circle-double_circle: 12468
+semi-circle-freeform: 18108
+semi-circle-hexagon: 8448
+semi-circle-octagon: 11166
+semi-circle-oval: 11856
+semi-circle-pentagon: 9015
+semi-circle-rectangle: 9867
+semi-circle-round: 6933
+semi-circle-semi-circle: 3681
+semi-circle-square: 8838
+semi-circle-tear: 9603
+semi-circle-trapezoid: 8214
+semi-circle-triangle: 8502

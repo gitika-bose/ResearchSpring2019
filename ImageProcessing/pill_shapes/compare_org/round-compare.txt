@@ -1,0 +1,16 @@
+round-bullet: Can't compare
+round-capsule: Can't compare
+round-diamond: 8748
+round-double_circle: Can't compare
+round-freeform: 22674
+round-hexagon: 11514
+round-octagon: 12189
+round-oval: Can't compare
+round-pentagon: 11580
+round-rectangle: 10140
+round-round: 6003
+round-semi-circle: 12405
+round-square: 17379
+round-tear: 10269
+round-trapezoid: Can't compare
+round-triangle: 11979

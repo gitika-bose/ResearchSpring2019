@@ -1,0 +1,16 @@
+double_circle-bullet: Can't compare
+double_circle-capsule: 5718
+double_circle-diamond: 7911
+double_circle-double_circle: 3051
+double_circle-freeform: 11409
+double_circle-hexagon: 7599
+double_circle-octagon: 7140
+double_circle-oval: 9375
+double_circle-pentagon: Can't compare
+double_circle-rectangle: 5634
+double_circle-round: Can't compare
+double_circle-semi-circle: 11547
+double_circle-square: Can't compare
+double_circle-tear: 7029
+double_circle-trapezoid: 8019
+double_circle-triangle: Can't compare

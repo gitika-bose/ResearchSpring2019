@@ -2,6 +2,8 @@ import numpy as np
 import cv2
 import sys
 
+# https://www.codepasta.com/computer-vision/2016/11/06/background-segmentation-removal-with-opencv.html
+
 def display(name,img):
     cv2.imshow(name,img)
     cv2.waitKey(0)
@@ -68,7 +70,7 @@ mask = np.logical_not(mask)
 img[mask] = 0
 
 # display("Final Image", img)
-cv2.imwrite('edge_detect_img.jpg', img)
+cv2.imwrite('post_images/edge_detect_img.jpg', img)
 
 # epsilon = 0.10*cv2.arcLength(contour,True)
 # approx = cv2.approxPolyDP(contour, 3,True)

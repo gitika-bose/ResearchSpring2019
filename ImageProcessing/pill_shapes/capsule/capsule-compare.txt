@@ -1,0 +1,16 @@
+capsule-bullet: Can't compare
+capsule-capsule: 2289
+capsule-diamond: 5337
+capsule-double_circle: 6123
+capsule-freeform: Can't compare
+capsule-hexagon: Can't compare
+capsule-octagon: Can't compare
+capsule-oval: 6486
+capsule-pentagon: Can't compare
+capsule-rectangle: Can't compare
+capsule-round: Can't compare
+capsule-semi-circle: Can't compare
+capsule-square: Can't compare
+capsule-tear: 4548
+capsule-trapezoid: 4347
+capsule-triangle: Can't compare

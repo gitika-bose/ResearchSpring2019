@@ -50,4 +50,4 @@ for i in range(w):
             img[i][j] = [0, 0, 0]
 
 # display("New Image", img)
-cv2.imwrite('extract_background_own_img.jpg', img)
+cv2.imwrite('post_images/extract_background_own_img.jpg', img)

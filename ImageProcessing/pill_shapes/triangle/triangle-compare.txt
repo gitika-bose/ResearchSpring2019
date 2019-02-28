@@ -1,0 +1,16 @@
+triangle-bullet: Can't compare
+triangle-capsule: Can't compare
+triangle-diamond: Can't compare
+triangle-double_circle: Can't compare
+triangle-freeform: 23310
+triangle-hexagon: 14937
+triangle-octagon: 13941
+triangle-oval: Can't compare
+triangle-pentagon: 10893
+triangle-rectangle: 12396
+triangle-round: 15927
+triangle-semi-circle: 19632
+triangle-square: 21666
+triangle-tear: 11394
+triangle-trapezoid: Can't compare
+triangle-triangle: 10245
