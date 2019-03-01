@@ -1,0 +1,16 @@
+round: 2032
+oval: 1476
+capsule: 738
+triangle: 30
+rectangle: 27
+diamond: 16
+pentagon: 15
+tear: 13
+hexagon: 12
+square: 12
+bullet: 6
+semi-circle: 5
+trapezoid: 3
+freeform: 2
+octagon: 2
+double_circle: 0
