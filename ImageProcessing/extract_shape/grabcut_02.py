@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import sys
 import imutils
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 
 def display(name,img):
     cv2.imshow(name,img)
@@ -27,7 +27,7 @@ cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
 mask2 = np.where((mask==2)|(mask==0),0,1).astype('uint8')
 img = img*mask2[:,:,np.newaxis]
 
-img[np.where((img!=[0,0,0]).all(axis=2))] = [255,255,255]
+# img[np.where((img!=[0,0,0]).all(axis=2))] = [255,255,255]
 # mean = np.mean(img)
 # img[img <= mean] = 0
 
