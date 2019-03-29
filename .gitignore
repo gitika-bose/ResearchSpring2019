@@ -1,2 +1,4 @@
 .idea
 research
+.ipynb_checkpoints
+.DS_Store
