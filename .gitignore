@@ -1,2 +1,4 @@
 .idea
 research
+venv
+.DS_Store
