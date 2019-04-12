@@ -1,4 +1,9 @@
 .idea
 research
+<<<<<<< HEAD
 .ipynb_checkpoints
 .DS_Store
+=======
+venv
+.DS_Store
+>>>>>>> faa80fedec29342b574cc232e72a783f69d04357
