@@ -1,6 +1,6 @@
 .idea
 research
-venv
+.ipynb_checkpoints
 .DS_Store
 ImageProcessing/images/
 Label_extraction/images/
