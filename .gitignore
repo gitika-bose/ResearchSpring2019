@@ -2,3 +2,9 @@
 research
 venv
 .DS_Store
+ImageProcessing/images/
+Label_extraction/images/
+text-recognition/images/
+text-recognition/google_cloud/create_dataset/images/
+venv/
+venv27/

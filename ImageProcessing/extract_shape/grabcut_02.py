@@ -16,8 +16,10 @@ def LAB_delta(delta,img):
     # return img
 shape = sys.argv[1]
 type = sys.argv[2]
-imagepath = '../images/pill_shapes/' + shape + '/' + shape + '_' + type + '.jpg'
-folder = '../images/pill_shapes/' + shape + '/'
+# imagepath = '../images/pill_shapes/' + shape + '/' + shape + '_' + type + '.jpg'
+imagepath = 'boop.jpg'
+folder = 'post_images/'
+# folder = '../images/pill_shapes/' + shape + '/'
 img2 = cv2.imread(imagepath)
 
 # display("Original", img2)
@@ -68,7 +70,8 @@ arr = [[x_n[i], y_n[i]] for i in range(len(x_n))]
 ctr = np.array(arr).reshape((-1,1,2)).astype(np.int32)
 cv2.drawContours(white, [ctr], -1, (0, 0, 0), 8)
 
-
+display('img',img)
+display('white',white)
 # display("White", white)
 # display("Image", img)
 cv2.imwrite(folder+shape+'-front_extract.jpg', white)
