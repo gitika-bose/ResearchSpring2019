@@ -1,0 +1,16 @@
+bullet
+capsule
+diamond
+double_circle
+freeform
+hexagon
+octagon
+oval
+pentagon
+rectangle
+round
+semi-circle
+square
+tear
+trapezoid
+triangle

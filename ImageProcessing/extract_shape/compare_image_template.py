@@ -23,13 +23,13 @@ img = cv2.imread(imagepath)
 # display("Image",img)
 
 img = imutils.resize(img, width=300)
-h_i,w_i = img.shape[:2]
+w_i, h_i = img.shape[:2]
 template = cv2.imread(templatepath)
 template = imutils.resize(template, width=300)
 # display("Template",template)
-h_t,w_t = template.shape[:2]
-for i in range(h_t):
-    for j in range(w_t):
+w_t,h_t = template.shape[:2]
+for i in range(w_t):
+    for j in range(h_t):
         if template[i][j][0] == 0 and template[i][j][1] == 0 and template[i][j][2] == 0:
             template[i][j][0],template[i][j][1],template[i][j][2] = 255,255,255
         elif template[i][j][0] == 255 and template[i][j][1] == 255 and template[i][j][2] == 255:
@@ -37,8 +37,9 @@ for i in range(h_t):
         else:
             template[i][j][0],template[i][j][1],template[i][j][2] = 0,0,0
 
-# display("Original",img)
-# display("Template", template)
+display("Original",img)
+display("Template", template)
+exit()
 if h_i >= h_t*2 or h_t >= h_i*2:
     line = compare_str + ': Can\'t compare\n'
 else:
