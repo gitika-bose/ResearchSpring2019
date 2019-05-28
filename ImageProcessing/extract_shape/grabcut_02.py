@@ -77,7 +77,6 @@ display('white',white)
 # display("Image", img)
 cv2.imwrite(folder+shape+'-front_extract.jpg', white)
 cv2.imwrite(folder+shape+'-front_grabcut.jpg', img)
-=======
 # blurred = cv2.GaussianBlur(img, (5, 5), 0)
 # gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
 # thresh = cv2.threshold(gray,0,255,cv2.THRESH_OTSU)[1]
