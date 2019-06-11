@@ -8,3 +8,4 @@ text-recognition/images/
 text-recognition/google_cloud/create_dataset/images/
 venv/
 venv27/
+research-pill-google_service_account_key.json

@@ -57,7 +57,7 @@ def decode_predictions(scores, geometry):
             # add the bounding box coordinates and probability score
             # to our respective lists
             rects.append((startX, startY, endX, endY))
-            confidences.append(scoresData[x]
+            confidences.append(scoresData[x])
 
     # return a tuple of the bounding boxes and associated confidences
     return (rects, confidences)
